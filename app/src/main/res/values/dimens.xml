@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="offset_0.25">1dp</dimen>
+    <dimen name="offset_0.5">2dp</dimen>
+    <dimen name="offset_1">5dp</dimen>
+    <dimen name="offset_2">10dp</dimen>
+    <dimen name="offset_3">15dp</dimen>
+    <dimen name="offset_4">20dp</dimen>
+    <dimen name="offset_5">25dp</dimen>
+    <dimen name="offset_6">30dp</dimen>
+    <dimen name="offset_7">35dp</dimen>
+    <dimen name="offset_8">40dp</dimen>
+    <dimen name="offset_9">45dp</dimen>
+    <dimen name="offset_10">50dp</dimen>
+    <dimen name="offset_20">100dp</dimen>
+
+    <dimen name="receipt_image_size">50dp</dimen>
+    <dimen name="screen_title_text_size">22sp</dimen>
+    <dimen name="search_icon_size">25dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+</resources>

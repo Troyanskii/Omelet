@@ -19,7 +19,7 @@ import java.util.List;
 public interface ReceiptDAO {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    public void insertReceipts(Receipt... receipts);
+    public void insertReceipts(List<Receipt> receipts);
 
     @Query("SELECT * FROM receipts WHERE title LIKE :title")
     List<Receipt> getReceiptByTitle(String title);

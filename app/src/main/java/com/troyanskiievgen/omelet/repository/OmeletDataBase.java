@@ -12,10 +12,10 @@ import static com.troyanskiievgen.omelet.repository.OmeletDataBase.DATABASE_VERS
  * Created by Relax on 27.07.2017.
  */
 
-@Database(entities = (Receipt.class), version = DATABASE_VERSION)
+@Database(entities = {Receipt.class}, version = DATABASE_VERSION)
 abstract class OmeletDataBase extends RoomDatabase implements DAOInterfaces{
 
-    static final int DATABASE_VERSION = 1;
+    static final int DATABASE_VERSION = 2;
 
     @Override
     public abstract ReceiptDAO getReceiptDao();

@@ -3,16 +3,18 @@ package com.troyanskiievgen.omelet.model;
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 /**
  * Created by Relax on 27.07.2017.
  */
 
-@Entity(tableName = "receipts")
+@Entity(tableName = "receipts", primaryKeys = {"title", "href"})
 public class Receipt {
 
-    @PrimaryKey(autoGenerate = true)
-    private long id;
+    public Receipt() {
+    }
 
     @ColumnInfo(name = "title")
     private String title ;
@@ -25,14 +27,6 @@ public class Receipt {
 
     @ColumnInfo(name = "thumbnail")
     private String thumbnail;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getTitle() {
         return title;
@@ -64,5 +58,15 @@ public class Receipt {
 
     public void setThumbnail(String thumbnail) {
         this.thumbnail = thumbnail;
+    }
+
+    @Override
+    public String toString() {
+        return "Receipt{" +
+                ", title='" + title + '\'' +
+                ", href='" + href + '\'' +
+                ", ingredients='" + ingredients + '\'' +
+                ", thumbnail='" + thumbnail + '\'' +
+                '}';
     }
 }

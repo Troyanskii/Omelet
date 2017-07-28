@@ -1,5 +1,8 @@
 package com.troyanskiievgen.omelet.network;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.util.Log;
 
 import java.io.IOException;
@@ -49,6 +52,13 @@ public class NetworkManager {
             restService = retrofit.create(RESTService.class);
         }
         return restService;
+    }
+
+    public static boolean isNetworkAvailable(Context context) {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
     private static class RESTInterceptor implements Interceptor {

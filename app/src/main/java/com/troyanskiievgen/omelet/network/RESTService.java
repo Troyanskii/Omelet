@@ -1,6 +1,7 @@
 package com.troyanskiievgen.omelet.network;
 
 import com.troyanskiievgen.omelet.model.Receipt;
+import com.troyanskiievgen.omelet.network.response.ReceiptsResult;
 
 import java.util.List;
 
@@ -12,13 +13,13 @@ import retrofit2.http.Query;
  * Created by Relax on 27.07.2017.
  */
 
-public interface RESTService {
+interface RESTService {
 
-    @GET
-    Call<List<Receipt>> getReceipts(@Query("i") String ingredients,
-                                    @Query("q") String dishName,
-                                    @Query("p") String page);
+    @GET(ConstantsAPI.API)
+    Call<ReceiptsResult> getReceipts(@Query("i") String ingredients,
+                                     @Query("q") String dishName,
+                                     @Query("p") int page);
 
-    @GET
-    Call<List<Receipt>> searchReceipts(@Query("q") String dishName);
+    @GET(ConstantsAPI.API)
+    Call<ReceiptsResult> searchReceipts(@Query("q") String dishName);
 }

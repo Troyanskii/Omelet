@@ -11,16 +11,9 @@ import com.troyanskiievgen.omelet.repository.DBRepository;
 
 public class OmeletApplication extends Application {
 
-    private static Context context;
-
     @Override
     public void onCreate() {
         super.onCreate();
-        context = getApplicationContext();
-        DBRepository.init();
-    }
-
-    public static Context getContext() {
-        return context;
+        DBRepository.init(getApplicationContext());
     }
 }
