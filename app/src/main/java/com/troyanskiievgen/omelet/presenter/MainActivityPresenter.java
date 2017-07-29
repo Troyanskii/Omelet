@@ -9,7 +9,6 @@ import com.troyanskiievgen.omelet.network.response.ReceiptsResult;
 import com.troyanskiievgen.omelet.repository.DBRepository;
 import com.troyanskiievgen.omelet.repository.listners.DBObtainReceiptsListener;
 import com.troyanskiievgen.omelet.repository.listners.DBOperationCompleteListener;
-import com.troyanskiievgen.omelet.ui.activitys.MainActivity;
 import com.troyanskiievgen.omelet.view.MainActivityView;
 
 import java.util.List;

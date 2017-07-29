@@ -1,9 +1,11 @@
-package com.troyanskiievgen.omelet.ui.activitys;
+package com.troyanskiievgen.omelet.ui.activity;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
@@ -17,7 +19,7 @@ import com.troyanskiievgen.omelet.R;
 import com.troyanskiievgen.omelet.model.Receipt;
 import com.troyanskiievgen.omelet.network.NetworkManager;
 import com.troyanskiievgen.omelet.presenter.MainActivityPresenter;
-import com.troyanskiievgen.omelet.ui.activitys.base.BaseActivity;
+import com.troyanskiievgen.omelet.ui.activity.base.BaseActivity;
 import com.troyanskiievgen.omelet.ui.adapters.ReceiptAdapter;
 import com.troyanskiievgen.omelet.ui.adapters.listeners.RecyclerItemClickListener;
 import com.troyanskiievgen.omelet.utils.DelayedTextChangeListener;
@@ -63,6 +65,10 @@ public class MainActivity extends BaseActivity implements MainActivityView, Recy
         receiptList.setLayoutManager(llm);
         adapter = new ReceiptAdapter(this);
         receiptList.setAdapter(adapter);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(receiptList.getContext(),
+                llm.getOrientation());
+        dividerItemDecoration.setDrawable(ContextCompat.getDrawable(this, R.drawable.divider_bg));
+        receiptList.addItemDecoration(dividerItemDecoration);
     }
 
     private void setupRefresh() {

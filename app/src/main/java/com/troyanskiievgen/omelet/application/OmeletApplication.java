@@ -1,7 +1,6 @@
 package com.troyanskiievgen.omelet.application;
 
 import android.app.Application;
-import android.content.Context;
 
 import com.troyanskiievgen.omelet.repository.DBRepository;
 

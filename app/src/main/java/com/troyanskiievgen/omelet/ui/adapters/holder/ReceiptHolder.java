@@ -3,6 +3,7 @@ package com.troyanskiievgen.omelet.ui.adapters.holder;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -23,7 +24,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class ReceiptHolder extends RecyclerView.ViewHolder {
 
     @BindView(R.id.receipt_image)
-    CircleImageView receiptImage;
+    ImageView receiptImage;
     @BindView(R.id.receipt_title)
     TextView receiptTitle;
     @BindView(R.id.receipt_ingredients)

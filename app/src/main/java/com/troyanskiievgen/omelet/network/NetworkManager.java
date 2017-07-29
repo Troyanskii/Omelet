@@ -17,14 +17,14 @@ import okio.Buffer;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static com.troyanskiievgen.omelet.network.ConstantsAPI.BASE_URL;
-
 /**
  * Created by Relax on 27.07.2017.
  */
 
 
 public class NetworkManager {
+
+    private final static String BASE_URL = "http://www.recipepuppy.com/";
 
     /*timeout values in seconds*/
     private static final int CONNECTION_TIMEOUT = 5;

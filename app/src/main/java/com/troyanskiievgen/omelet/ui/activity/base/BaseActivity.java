@@ -1,4 +1,4 @@
-package com.troyanskiievgen.omelet.ui.activitys.base;
+package com.troyanskiievgen.omelet.ui.activity.base;
 
 import android.os.Bundle;
 

@@ -1,10 +1,7 @@
 package com.troyanskiievgen.omelet.network;
 
-import com.troyanskiievgen.omelet.model.Receipt;
 import com.troyanskiievgen.omelet.network.listeners.RequestReceiptsListener;
 import com.troyanskiievgen.omelet.network.response.ReceiptsResult;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;

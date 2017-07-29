@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         android:gravity="center"
-        android:text="Recipet labs"
+        android:text="@string/main_activity_title"
         android:textColor="@color/white"
         android:textSize="@dimen/screen_title_text_size" />
 

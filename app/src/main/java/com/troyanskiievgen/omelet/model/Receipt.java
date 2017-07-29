@@ -2,9 +2,6 @@ package com.troyanskiievgen.omelet.model;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
-import android.os.Parcel;
-import android.os.Parcelable;
 
 /**
  * Created by Relax on 27.07.2017.
@@ -12,9 +9,6 @@ import android.os.Parcelable;
 
 @Entity(tableName = "receipts", primaryKeys = {"title", "href"})
 public class Receipt {
-
-    public Receipt() {
-    }
 
     @ColumnInfo(name = "title")
     private String title ;

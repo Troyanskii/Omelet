@@ -1,4 +1,4 @@
-package com.troyanskiievgen.omelet.ui.activitys;
+package com.troyanskiievgen.omelet.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import com.arellomobile.mvp.presenter.PresenterType;
 import com.troyanskiievgen.omelet.R;
 import com.troyanskiievgen.omelet.network.NetworkManager;
 import com.troyanskiievgen.omelet.presenter.SplashActivityPresenter;
-import com.troyanskiievgen.omelet.ui.activitys.base.BaseActivity;
+import com.troyanskiievgen.omelet.ui.activity.base.BaseActivity;
 import com.troyanskiievgen.omelet.view.SplashActivityView;
 
 /**

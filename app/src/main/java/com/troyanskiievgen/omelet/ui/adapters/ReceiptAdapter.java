@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ReceiptAdapter extends RecyclerView.Adapter<ReceiptHolder> {
 
-    private RecyclerItemClickListener<Receipt> listener;
+    private final RecyclerItemClickListener<Receipt> listener;
     private List<Receipt> items;
 
     public ReceiptAdapter(@NonNull RecyclerItemClickListener<Receipt> listener) {

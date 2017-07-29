@@ -15,11 +15,11 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".ui.activitys.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".ui.activitys.SplashActivity"
+        <activity android:name=".ui.activity.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

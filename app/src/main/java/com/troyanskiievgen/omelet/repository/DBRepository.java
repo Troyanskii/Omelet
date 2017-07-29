@@ -17,7 +17,7 @@ import java.util.List;
 public class DBRepository {
 
     private static DBRepository instance;
-    private OmeletDataBase omeletDataBase;
+    private final OmeletDataBase omeletDataBase;
 
     private DBRepository(Context context) {
         omeletDataBase = Room.databaseBuilder(context,
