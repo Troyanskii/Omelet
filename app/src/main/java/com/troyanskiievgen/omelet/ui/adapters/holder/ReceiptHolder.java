@@ -49,9 +49,11 @@ public class ReceiptHolder extends RecyclerView.ViewHolder {
     public void bindContent(Receipt receipt) {
         this.receipt = receipt;
         Glide.with(context)
-                .load(receipt.getThumbnail())
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .into(receiptImage);
+             .load(receipt.getThumbnail())
+             .asBitmap()
+             .diskCacheStrategy(DiskCacheStrategy.ALL)
+             .placeholder(R.drawable.dog)
+             .into(receiptImage);
         receiptTitle.setText(receipt.getTitle());
         receiptIngredients.setText(receipt.getIngredients());
     }

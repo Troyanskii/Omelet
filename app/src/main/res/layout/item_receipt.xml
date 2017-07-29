@@ -12,7 +12,10 @@
         android:layout_width="@dimen/receipt_image_size"
         android:layout_height="@dimen/receipt_image_size"
         android:layout_gravity="center"
-        android:layout_margin="@dimen/offset_2"/>
+        android:layout_margin="@dimen/offset_2"
+        android:src="@color/white"
+        app:civ_border_color="@color/gray"
+        app:civ_border_width="1dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
